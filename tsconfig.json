@@ -1,12 +1,15 @@
 {
   "compilerOptions": {
+    "rootDirs": ["./scripts", "./test", "./typechain", "./tasks"],
     "target": "es2018",
     "module": "commonjs",
     "strict": true,
     "esModuleInterop": true,
     "outDir": "dist",
-    "declaration": true
+    "declaration": true,
+    "declarationMap": true
   },
   "include": ["./scripts", "./test", "./typechain", "./tasks"],
+  "exclude": ["dist", "node_modules"],
   "files": ["./hardhat.config.ts"]
 }
